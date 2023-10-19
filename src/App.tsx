@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ThemeProvider } from "styled-components";
+import { Apptheme } from "./utils/Theme";
+import NavBar from "./components/NavBar";
+import Hero from "./components/coverpage";
+import Skills from "./components/skills";
+import Education from "./components/education";
+import { BrowserRouter } from "react-router-dom";
+import { useState } from "react";
+import { Body, Wrapper } from "./AppStyle";
+import Experience from "./components/experience";
+import Project from "./components/project";
+import Certificate from "./components/certificate";
 
-function App() {
+const App = () => {
+  const [darkTheme, setDarkTheme] = useState<boolean>(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme ? Apptheme["dark"] : Apptheme["light"]}>
+      <BrowserRouter>
+        <NavBar />
+        <Body>
+          <Hero />
+          <Wrapper>
+            <Skills />
+            <Experience />
+            <Certificate />
+          </Wrapper>
+
+          <Project />
+          <Education />
+        </Body>
+      </BrowserRouter>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
