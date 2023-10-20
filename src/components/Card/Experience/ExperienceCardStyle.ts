@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Document = styled.img`
   display: none;
@@ -17,7 +17,7 @@ const Description = styled.div`
   width: 100%;
   font-size: 15px;
   font-weight: 400;
-  color: ${({theme}) => theme.text_primary as number + 99};
+  color: ${({ theme }) => (theme.text_primary as number) + 99};
   margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
@@ -93,7 +93,8 @@ const Body = styled.div`
 const Role = styled.div`
   font-size: 18px;
   font-weight: 600;
-  color: ${({theme}) => theme.text_primary as number + 99};
+  margin-top: 16px;
+  color: ${({ theme }) => (theme.text_primary as number) + 99};
   @media only screen and (max-width: 768px) {
     font-size: 14px;
   }
@@ -102,7 +103,7 @@ const Role = styled.div`
 const Company = styled.div`
   font-size: 14px;
   font-weight: 500;
-  color: ${({theme}) => theme.text_secondary as number + 99};
+  color: ${({ theme }) => (theme.text_secondary as number) + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -111,7 +112,7 @@ const Company = styled.div`
 const Duration = styled.div`
   font-size: 12px;
   font-weight: 400;
-  color: ${({theme}) => theme.text_secondary as number + 80};
+  color: ${({ theme }) => (theme.text_secondary as number) + 80};
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
@@ -133,26 +134,26 @@ const ItemWrapper = styled.div`
 const Skill = styled.div`
   font-size: 15px;
   font-weight: 400;
-  border: solid 1px ${({theme}) => theme.text_primary as number + 99};
+  border: solid 1px ${({ theme }) => (theme.text_primary as number) + 99};
   border-radius: 25px;
   padding: 4px 10px;
-  color: ${({theme}) => theme.text_primary as number + 99};
+  color: ${({ theme }) => (theme.text_primary as number) + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
 `;
 export {
-	Card,
-	Top,
-	Image,
-	Body,
-	Role,
-	Company,
-	Duration,
-	Skills,
-	Skill,
-	ItemWrapper,
-	Description,
-	Span,
-	Document,
+  Card,
+  Top,
+  Image,
+  Body,
+  Role,
+  Company,
+  Duration,
+  Skills,
+  Skill,
+  ItemWrapper,
+  Description,
+  Span,
+  Document,
 };

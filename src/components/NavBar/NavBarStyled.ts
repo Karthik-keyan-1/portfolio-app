@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import {Link as LinkR} from 'react-router-dom';
-import styled from 'styled-components';
+import { Link as LinkR } from "react-router-dom";
+import styled from "styled-components";
 
 export const Nav = styled.div`
-  background-color: ${({theme}) => theme.card_light as string};
+  background-color: ${({ theme }) => theme.card_light as string};
   height: 80px;
   display: flex;
   align-items: center;
@@ -23,7 +23,6 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
   max-width: 1300px;
 `;
 
@@ -59,17 +58,17 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
-  color: ${({theme}) => theme.text_primary as string};
+  color: ${({ theme }) => theme.text_primary as string};
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${({theme}) => theme.primary as string};
+    color: ${({ theme }) => theme.primary as string};
   }
 
   &.active {
-    border-bottom: 2px solid ${({theme}) => theme.primary as string};
+    border-bottom: 2px solid ${({ theme }) => theme.primary as string};
   }
 `;
 
@@ -95,11 +94,11 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.5rem;
     cursor: pointer;
-    color: ${({theme}) => theme.text_primary as string};
+    color: ${({ theme }) => theme.text_primary as string};
   }
 `;
 
-export const MobileMenu = styled.div<{isOpen: boolean}>`
+export const MobileMenu = styled.div<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,14 +108,14 @@ export const MobileMenu = styled.div<{isOpen: boolean}>`
   right: 0;
   width: 100%;
   padding: 12px 40px 24px 40px;
-  background: ${({theme}) => theme.card_light as number + 99};
+  background: ${({ theme }) => (theme.card_light as number) + 99};
   transition: all 0.6s ease-in-out;
-  transform: ${({isOpen}) =>
-		isOpen ? 'translateY(0)' : 'translateY(-100%)'};
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateY(0)" : "translateY(-100%)"};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
-  z-index: ${({isOpen}) => (isOpen ? '1000' : '-1000')};
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
 export const MobileMenuItems = styled.ul`
@@ -131,28 +130,28 @@ export const MobileMenuItems = styled.ul`
 `;
 
 export const MobileMenuLink = styled(LinkR)`
-  color: ${({theme}) => theme.text_primary as string};
+  color: ${({ theme }) => theme.text_primary as string};
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${({theme}) => theme.primary as string};
+    color: ${({ theme }) => theme.primary as string};
   }
 
   &.active {
-    border-bottom: 2px solid ${({theme}) => theme.primary as string};
+    border-bottom: 2px solid ${({ theme }) => theme.primary as string};
   }
 `;
 
 export const MobileMenuButton = styled.a`
-  border: 1.8px solid ${({theme}) => theme.primary as string};
+  border: 1.8px solid ${({ theme }) => theme.primary as string};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({theme}) => theme.primary as string};
+  color: ${({ theme }) => theme.primary as string};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
@@ -161,23 +160,23 @@ export const MobileMenuButton = styled.a`
   transition: all 0.6s ease-in-out;
 
   :hover {
-    background: ${({theme}) => theme.primary as string};
-    color: ${({theme}) => theme.white as string};
+    background: ${({ theme }) => theme.primary as string};
+    color: ${({ theme }) => theme.white as string};
   }
 `;
 
 export const MobileLink = styled.a`
-  color: ${({theme}) => theme.text_primary as string};
+  color: ${({ theme }) => theme.text_primary as string};
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${({theme}) => theme.primary as string};
+    color: ${({ theme }) => theme.primary as string};
   }
 
   &.active {
-    border-bottom: 2px solid ${({theme}) => theme.primary as string};
+    border-bottom: 2px solid ${({ theme }) => theme.primary as string};
   }
 `;
 

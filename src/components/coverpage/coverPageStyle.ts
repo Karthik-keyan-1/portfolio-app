@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: ${({theme}) => theme.card_light as string};
+  background: ${({ theme }) => theme.card_light as string};
   display: flex;
   justify-content: center;
   position: relative;
@@ -99,7 +99,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({theme}) => theme.primary as string};
+  border: 2px solid ${({ theme }) => theme.primary as string};
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -115,7 +115,7 @@ export const Img = styled.img`
 export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
-  color: ${({theme}) => theme.text_primary as string};
+  color: ${({ theme }) => theme.text_primary as string};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
@@ -133,7 +133,7 @@ export const TextLoop = styled.div`
   font-size: 32px;
   display: flex;
   gap: 12px;
-  color: ${({theme}) => theme.text_primary as string};
+  color: ${({ theme }) => theme.text_primary as string};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
@@ -146,7 +146,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: ${({theme}) => theme.primary as string};
+  color: ${({ theme }) => theme.primary as string};
   cursor: pointer;
 `;
 
@@ -154,7 +154,7 @@ export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
-  color: ${({theme}) => theme.text_primary as number + 95};
+  color: ${({ theme }) => (theme.text_primary as number) + 95};
 
   @media (max-width: 960px) {
     text-align: center;
@@ -175,7 +175,7 @@ export const ResumeButton = styled.a`
     max-width: 300px;
     text-align: center;
     padding: 16px 0;
-    color:${({theme}) => theme.white as string};
+    color:${({ theme }) => theme.white as string};
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;

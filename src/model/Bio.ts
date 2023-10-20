@@ -37,10 +37,12 @@ export type Education = {
 };
 
 export type Project = {
+
 	Id: number;
 	title: string;
 	description: string;
 	skills: string[];
+	image?: string;
 };
 
 export type Certification = {
