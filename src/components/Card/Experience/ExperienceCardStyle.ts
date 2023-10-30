@@ -50,9 +50,8 @@ const Card = styled.div`
     transform: translateY(-5px);
   }
   @media only screen and (max-width: 768px) {
-    padding: 10px;
     gap: 8px;
-    width: 300px;
+    width: 320px;
   }
 
   &:hover ${Document} {
