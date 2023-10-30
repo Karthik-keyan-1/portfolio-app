@@ -49,7 +49,7 @@ const ProjectImage = styled.img`
   background-color: #000;
   border-radius: 10px;
   @media only screen and (max-width: 768px) {
-    height: 40px;
+    height: 200px;
   }
 `;
 export { ProjectCardWrapper, ProjectDescription, ProjectSkill, ProjectImage };
