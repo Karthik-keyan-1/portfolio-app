@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -30,9 +30,9 @@ const ProjectWrapper = styled.div`
 const RowFlex = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 25px;
   flex-wrap: wrap;
 `;
-export {ProjectContainer, ProjectWrapper, RowFlex};
+export { ProjectContainer, ProjectWrapper, RowFlex };

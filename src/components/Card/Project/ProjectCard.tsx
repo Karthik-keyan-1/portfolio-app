@@ -18,7 +18,7 @@ type Props = {
 };
 
 const ProjectCard = ({
-  data: { title, description, skills, image },
+  data: { title, description, skills, image, link },
 }: Props) => (
   <ProjectCardWrapper>
     <Top>
@@ -42,6 +42,17 @@ const ProjectCard = ({
           </ItemWrapper>
         </Skills>
       </>
+    )}
+    <br />
+    {link && (
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        style={{ color: "white" }}
+      >
+        App Link
+      </a>
     )}
   </ProjectCardWrapper>
 );

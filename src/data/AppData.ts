@@ -230,6 +230,7 @@ export const project: Project[] = [
 	   It interfaces with the OpenTDB API to fetch quiz data.`,
     skills: ["React", "Redux", "Material UI", "Netlify"],
     image: "/images/quizApp.jpg",
+    link: "https://karthikeyan-quiz-app.netlify.app/",
   },
   {
     Id: 4,
@@ -239,12 +240,14 @@ export const project: Project[] = [
     skills: ["React", "Redux", "Bootstrap", ".Net Core"],
     image: "/images/todoApp.jpg",
   },
+
   {
-    Id: 3,
-    title: "Portfolio App",
-    description: `The portfolio application is developed with React, Styled Components and Material UI, and it is hosted on Netlify`,
-    skills: ["React", "Material UI", "Netlify"],
-    image: "/images/portfolioApp.jpg",
+    Id: 5,
+    title: "Gallery App",
+    description: `A React-based gallery application has been developed wherein images are dynamically rendered, utilizing the Unsplash API on the backend to power the content.`,
+    skills: ["React"],
+    image: "/images/galleryApp.jpg",
+    link: "https://karthikeyan-gallery-app.netlify.app/",
   },
 ];
 

@@ -1,56 +1,56 @@
 export type Bio = {
-	name: string;
-	roles: string[];
-	objective: string;
-	linkedin: string;
-	resume: string;
-	mobile: string;
-	email: string;
+  name: string;
+  roles: string[];
+  objective: string;
+  linkedin: string;
+  resume: string;
+  mobile: string;
+  email: string;
 };
 
 export type SkillDetail = {
-	category: string;
-	skills: Skill[];
+  category: string;
+  skills: Skill[];
 };
 
 export type Skill = {
-	name: string;
-	image: string;
+  name: string;
+  image: string;
 };
 
 export type Experience = {
-	Id: number;
-	company: string;
-	img: string;
-	role: string;
-	duration: string;
-	description: string;
-	skills: string[];
+  Id: number;
+  company: string;
+  img: string;
+  role: string;
+  duration: string;
+  description: string;
+  skills: string[];
 };
 
 export type Education = {
-	school: string;
-	degree: string;
-	duration: string;
-	grade: string;
-	image: string;
+  school: string;
+  degree: string;
+  duration: string;
+  grade: string;
+  image: string;
 };
 
 export type Project = {
-
-	Id: number;
-	title: string;
-	description: string;
-	skills: string[];
-	image?: string;
+  Id: number;
+  title: string;
+  description: string;
+  skills: string[];
+  image?: string;
+  link?: string;
 };
 
 export type Certification = {
-	title: string;
-	providedBy: string;
+  title: string;
+  providedBy: string;
 };
 
 export type NavOption = {
-	name: string;
-	path: string;
+  name: string;
+  path: string;
 };

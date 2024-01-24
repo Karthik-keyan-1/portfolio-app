@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import styled from "styled-components";
-import { Span } from "../Experience/ExperienceCardStyle";
 
 const ProjectCardWrapper = styled.div`
   width: 375px;
